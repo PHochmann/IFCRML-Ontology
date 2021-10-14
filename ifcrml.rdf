@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ifcrml#"
+     xml:base="https://w3id.org/ifcrml"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:title="http://www.geneontology.org/formats/oboInOwl#&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;">
+    <owl:Ontology rdf:about="https://w3id.org/ifcrml#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;RML -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;RML"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ifcrml#format -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#format">
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:source"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ifc2x3tc1</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>ifc4</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">IFC standard of file specified by path property. Currently, ifc4 and ifc2x3tc1 are supported.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ifcrml#iterator -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#iterator">
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:logicalSource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Iterator, written in BimServer query language, which extracts the entities from IFC files to map to RDF subjects. For more information on the query language used, see the BimServer Wiki at https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ifcrml#password -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#password">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Password of credentials to login to BimServer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ifcrml#path -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#path">
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Path in local file system to IFC file to convert</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ifcrml#serverLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#serverLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">URL of BimServer instance to use. Should also specify a port.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ifcrml#username -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#username">
+        <rdfs:domain rdf:resource="https://w3id.org/ifcrml#rml:source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Username of credentials to login to BimServer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ifcrml#ifc -->
+
+    <owl:Class rdf:about="https://w3id.org/ifcrml#ifc">
+        <rdfs:comment xml:lang="en">Type to give to source so that mapper detects correct input format.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ifcrml#rml:logicalSource -->
+
+    <owl:Class rdf:about="https://w3id.org/ifcrml#rml:logicalSource"/>
+    
+
+
+    <!-- https://w3id.org/ifcrml#rml:source -->
+
+    <owl:Class rdf:about="https://w3id.org/ifcrml#rml:source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ifcrml#IFCAttribute -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ifcrml#IFCAttribute">
+        <rdfs:comment xml:lang="en">Subject to indicate reference formulation. References can be IFC entity attributes as specified in EXPRESS schema or &quot;IFCType&quot; which evaluates to type name of current entitiy.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
