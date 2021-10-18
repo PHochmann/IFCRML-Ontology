@@ -1,0 +1,121 @@
+<https://w3id.org/ifcrml#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ifcrml#> <http://purl.org/dc/elements/1.1/description> "The IFC RML vocabulary, described using W3C RDF Schema and the Web Ontology Language." .
+<https://w3id.org/ifcrml#> <http://purl.org/dc/elements/1.1/title> "IFC RML (ifcrml) vocabulary" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/wot/0.1/assurance
+<http://xmlns.com/wot/0.1/assurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/wot/0.1/src_assurance
+<http://xmlns.com/wot/0.1/src_assurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ifcrml#format
+<https://w3id.org/ifcrml#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#format> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#source> .
+<https://w3id.org/ifcrml#format> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ifc2x3tc1" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ifc4" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ifcrml#format> <http://www.w3.org/2000/01/rdf-schema#comment> "IFC standard of file specified by path property. Currently, ifc4 and ifc2x3tc1 are supported."@en .
+# 
+# https://w3id.org/ifcrml#iterator
+<https://w3id.org/ifcrml#iterator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#iterator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#logicalSource> .
+<https://w3id.org/ifcrml#iterator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ifcrml#iterator> <http://www.w3.org/2000/01/rdf-schema#comment> "Iterator, written in BimServer query language, which extracts the entities from IFC files to map to RDF subjects. For more information on the query language used, see the BimServer Wiki at https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage"@en .
+# 
+# https://w3id.org/ifcrml#password
+<https://w3id.org/ifcrml#password> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#password> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/ifcrml#password> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#source> .
+<https://w3id.org/ifcrml#password> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ifcrml#password> <http://www.w3.org/2000/01/rdf-schema#comment> "Password of credentials to login to BimServer"@en .
+# 
+# https://w3id.org/ifcrml#path
+<https://w3id.org/ifcrml#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#path> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#source> .
+<https://w3id.org/ifcrml#path> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ifcrml#path> <http://www.w3.org/2000/01/rdf-schema#comment> "Path in local file system to IFC file to convert"@en .
+# 
+# https://w3id.org/ifcrml#serverLocation
+<https://w3id.org/ifcrml#serverLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#serverLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/ifcrml#serverLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#source> .
+<https://w3id.org/ifcrml#serverLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ifcrml#serverLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of BimServer instance to use. Should also specify a port."@en .
+# 
+# https://w3id.org/ifcrml#username
+<https://w3id.org/ifcrml#username> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ifcrml#username> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semweb.mmlab.be/ns/rml#source> .
+<https://w3id.org/ifcrml#username> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ifcrml#username> <http://www.w3.org/2000/01/rdf-schema#comment> "Username of credentials to login to BimServer"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://semweb.mmlab.be/ns/rml#logicalSource
+<http://semweb.mmlab.be/ns/rml#logicalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://semweb.mmlab.be/ns/rml#source
+<http://semweb.mmlab.be/ns/rml#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Class
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ifcrml#ifc
+<https://w3id.org/ifcrml#ifc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ifcrml#ifc> <http://www.w3.org/2000/01/rdf-schema#comment> "Type to give to source so that mapper detects correct input format."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ifcrml#IFCAttribute
+<https://w3id.org/ifcrml#IFCAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ifcrml#IFCAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Resource to indicate reference formulation. References can be IFC entity attributes as specified in EXPRESS schema or \"IFCType\" which evaluates to type name of current entity."@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

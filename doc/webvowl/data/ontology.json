@@ -1,0 +1,266 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/ifcrml", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://semweb.mmlab.be/ns/rml" ],
+    "title" : {
+      "undefined" : "IFC RML (ifcrml) vocabulary"
+    },
+    "iri" : "https://w3id.org/ifcrml#",
+    "description" : {
+      "undefined" : "The IFC RML vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+    },
+    "other" : {
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "IFC RML (ifcrml) vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://semweb.mmlab.be/ns/rml#logicalSource",
+    "baseIri" : "http://semweb.mmlab.be/ns/rml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "logicalSource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "13",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://semweb.mmlab.be/ns/rml#source",
+    "baseIri" : "http://semweb.mmlab.be/ns/rml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#ifc",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ifc"
+    },
+    "comment" : {
+      "en" : "Type to give to source so that mapper detects correct input format."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ifcrml#format",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "format"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "IFC standard of file specified by path property. Currently, ifc4 and ifc2x3tc1 are supported."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#password",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "password"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Password of credentials to login to BimServer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#iterator",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "iterator"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Iterator, written in BimServer query language, which extracts the entities from IFC files to map to RDF subjects. For more information on the query language used, see the BimServer Wiki at https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#serverLocation",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "serverLocation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "URL of BimServer instance to use. Should also specify a port."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#path",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "path"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Path in local file system to IFC file to convert"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ifcrml#username",
+    "baseIri" : "https://w3id.org/ifcrml",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "username"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Username of credentials to login to BimServer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  } ]
+}
