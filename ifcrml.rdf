@@ -74,10 +74,22 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#iterator">
         <rdfs:domain rdf:resource="http://semweb.mmlab.be/ns/rml#logicalSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Iterator, written in BimServer query language, which extracts the entities from IFC files to map to RDF subjects. For more information on the query language used, see the BimServer Wiki at https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage</rdfs:comment>
+        <rdfs:comment xml:lang="en">Iterator, written in BimServer query language, which extracts the entities from IFC files to map to RDF subjects. For more information on the query language used, see the BimServer Wiki at https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage. Optional and can be used in conjuction with FnO filter function. In the case it is used with a filter function, the iterator is executed first and the selected entities are passed to the filtering function to further narrow down the selected entities for mapping.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- https://w3id.org/ifcrml#iteratorMapping -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#iteratorMapping">
+        <rdfs:domain rdf:resource="http://semweb.mmlab.be/ns/rml#logicalSource"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:comment xml:lang="en">Mapping to use for description and implementation for filtering function. Optional and can be used together with ifcrml:iterator, but when present, there also has to be an ifcrml:iteratorExecution present.</rdfs:comment>
     </owl:DatatypeProperty>
     
-
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#iteratorExecution">
+        <rdfs:domain rdf:resource="http://semweb.mmlab.be/ns/rml#logicalSource"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Execution"/>
+        <rdfs:comment xml:lang="en">Execution to use when invoking a filtering function. It contains the actual parameter-values that are used for invocation of the function. Optional and can be used together with ifcrml:iterator, but when present, there also has to be an ifcrml:iteratorMapping present.</rdfs:comment>
+    </owl:DatatypeProperty>
 
     <!-- https://w3id.org/ifcrml#password -->
 
@@ -117,6 +129,12 @@
         <rdfs:domain rdf:resource="http://semweb.mmlab.be/ns/rml#source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Username of credentials to login to BimServer</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ifcrml#geometry">
+        <rdfs:domain rdf:resource="http://semweb.mmlab.be/ns/rml#source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Boolean used to indicate whether further information about the IFC products' geometry should be generated when obtaining a result from BIMserver</rdfs:comment>
     </owl:DatatypeProperty>
     
 
